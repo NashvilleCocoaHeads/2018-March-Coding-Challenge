@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // get locations
         
-        let locations = LocationDataPreparer().getLocationData()
+        let locations = try! LocationDataPreparer.getLocationData()
         let dataSource = LocationsDataSource(with: locations)
         let locationsTableViewController = LocationsTableViewController(with: dataSource)
         

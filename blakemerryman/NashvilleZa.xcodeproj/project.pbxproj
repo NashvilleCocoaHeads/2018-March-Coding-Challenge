@@ -21,6 +21,8 @@
 		16FB77A0206C158E00B3DCD2 /* CLLocation+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FB779F206C158E00B3DCD2 /* CLLocation+Extensions.swift */; };
 		16FB77A2206C162300B3DCD2 /* LocationsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FB77A1206C162300B3DCD2 /* LocationsDataSource.swift */; };
 		16FB77A5206C237E00B3DCD2 /* LocationDataPreparer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FB77A4206C237E00B3DCD2 /* LocationDataPreparer.swift */; };
+		46F4198B207CFC4E00E4657E /* GoodZa.json in Resources */ = {isa = PBXBuildFile; fileRef = 46F41989207CFC4E00E4657E /* GoodZa.json */; };
+		46F4198C207CFC4E00E4657E /* BadZa.json in Resources */ = {isa = PBXBuildFile; fileRef = 46F4198A207CFC4E00E4657E /* BadZa.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,8 @@
 		16FB779F206C158E00B3DCD2 /* CLLocation+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLLocation+Extensions.swift"; sourceTree = "<group>"; };
 		16FB77A1206C162300B3DCD2 /* LocationsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsDataSource.swift; sourceTree = "<group>"; };
 		16FB77A4206C237E00B3DCD2 /* LocationDataPreparer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDataPreparer.swift; sourceTree = "<group>"; };
+		46F41989207CFC4E00E4657E /* GoodZa.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = GoodZa.json; sourceTree = "<group>"; };
+		46F4198A207CFC4E00E4657E /* BadZa.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = BadZa.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +120,7 @@
 				16D66FDA207B9FBC0095FE64 /* MarchCodingChallengeTests.swift */,
 				16FB7787206C002000B3DCD2 /* NashvilleZaTests.swift */,
 				16FB7789206C002000B3DCD2 /* Info.plist */,
+				46F4198D207CFC5800E4657E /* Test Data */,
 			);
 			path = NashvilleZaTests;
 			sourceTree = "<group>";
@@ -135,6 +140,15 @@
 				16FB779F206C158E00B3DCD2 /* CLLocation+Extensions.swift */,
 			);
 			name = Extensions;
+			sourceTree = "<group>";
+		};
+		46F4198D207CFC5800E4657E /* Test Data */ = {
+			isa = PBXGroup;
+			children = (
+				46F4198A207CFC4E00E4657E /* BadZa.json */,
+				46F41989207CFC4E00E4657E /* GoodZa.json */,
+			);
+			path = "Test Data";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,6 +244,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46F4198C207CFC4E00E4657E /* BadZa.json in Resources */,
+				46F4198B207CFC4E00E4657E /* GoodZa.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

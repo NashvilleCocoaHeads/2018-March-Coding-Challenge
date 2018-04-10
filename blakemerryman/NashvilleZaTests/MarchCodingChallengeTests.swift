@@ -18,7 +18,7 @@ class LocationDataPreparerTests: XCTestCase {
     /// Challenge 2
     func testJSONDecoding() {
         do {
-            let locations = try LocationDataPreparer.getLocationData(fromFile: "GoodZa", withExtension: "json", locatedInBundle: .test, sortByDistance: true)
+            let locations = try LocationDataPreparer.getLocationData(fromFile: "GoodZa", withExtension: "json", locatedInBundle: .test, sortedByDistance: true)
             XCTAssert(locations.count > 0, "Unable to load locations from JSON.")
         }
         catch {
@@ -28,7 +28,7 @@ class LocationDataPreparerTests: XCTestCase {
 
     func testJSONDecodingFailure() {
         do {
-            _ = try LocationDataPreparer.getLocationData(fromFile: "BadZa", withExtension: "json", locatedInBundle: .test, sortByDistance: true)
+            _ = try LocationDataPreparer.getLocationData(fromFile: "BadZa", withExtension: "json", locatedInBundle: .test, sortedByDistance: true)
             XCTFail("We should have been unable to load the location data.")
         }
         catch {

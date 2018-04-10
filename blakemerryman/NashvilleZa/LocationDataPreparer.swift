@@ -20,17 +20,23 @@ class LocationDataPreparer {
     static func getLocationData(fromFile fileName: String = "za-data",
                                 withExtension fileExtension: String = "json",
                                 locatedInBundle bundle: Bundle = .main,
-                                sortByDistance: Bool = true) throws -> [Location] {
+                                sortedByDistance: Bool = true) throws -> [Location] {
 
         guard let dataURL = bundle.url(forResource: fileName, withExtension: fileExtension) else {
             throw LocationDataPreparerError.unableToLoadDataFromBundle
         }
 
         let zaData = try Data(contentsOf: dataURL, options: [])
-        let decoder = JSONDecoder()
-        var locations = try decoder.decode([Location].self, from: zaData)
+        return try loadLocations(fromData: zaData, sortedByDistance: sortedByDistance)
+    }
 
-        if sortByDistance {
+    /// Use this method to load locations from response data.
+    static func loadLocations(fromData data: Data, sortedByDistance: Bool) throws -> [Location] {
+        let decoder = JSONDecoder()
+
+        var locations = try decoder.decode([Location].self, from: data)
+
+        if sortedByDistance {
             locations = locations.sortByDistance()
         }
 

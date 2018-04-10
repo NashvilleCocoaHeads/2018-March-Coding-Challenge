@@ -19,7 +19,7 @@ struct Location: Codable {
     var distance: CLLocationDistance {
         let currentLocation: CLLocation = CLLocation(latitude: 36.174454, longitude: -86.761744) // faked location
         let zaLocation = CLLocation(latitude: latitude, longitude: longitude)
-        
         return zaLocation.distance(from: currentLocation)
     }
+    
 }

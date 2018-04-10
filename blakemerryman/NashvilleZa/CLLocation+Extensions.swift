@@ -9,6 +9,7 @@
 import CoreLocation
 
 extension CLLocationDistance {
+
     var miles: Double {
         return self * 0.000621371
     }
@@ -17,6 +18,7 @@ extension CLLocationDistance {
     /// This method is currently tested by `testMilesString()`.
     /// Update this method to make testing easier. For a hint see `testMilesString()` in `NashvilleZaTests.swift`.
     var milesString: String {
-        return String(format: "%.2f miles", miles)
+        return NumberFormatter.milesFormatter.string(from: miles)
     }
+
 }

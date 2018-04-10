@@ -23,6 +23,8 @@
 		16FB77A5206C237E00B3DCD2 /* LocationDataPreparer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FB77A4206C237E00B3DCD2 /* LocationDataPreparer.swift */; };
 		46F4198B207CFC4E00E4657E /* GoodZa.json in Resources */ = {isa = PBXBuildFile; fileRef = 46F41989207CFC4E00E4657E /* GoodZa.json */; };
 		46F4198C207CFC4E00E4657E /* BadZa.json in Resources */ = {isa = PBXBuildFile; fileRef = 46F4198A207CFC4E00E4657E /* BadZa.json */; };
+		46F4198F207D01C100E4657E /* NumberFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F4198E207D01C100E4657E /* NumberFormatterTests.swift */; };
+		46F41991207D01ED00E4657E /* NumberFormatter+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F41990207D01ED00E4657E /* NumberFormatter+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,8 @@
 		16FB77A4206C237E00B3DCD2 /* LocationDataPreparer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDataPreparer.swift; sourceTree = "<group>"; };
 		46F41989207CFC4E00E4657E /* GoodZa.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = GoodZa.json; sourceTree = "<group>"; };
 		46F4198A207CFC4E00E4657E /* BadZa.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = BadZa.json; sourceTree = "<group>"; };
+		46F4198E207D01C100E4657E /* NumberFormatterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberFormatterTests.swift; sourceTree = "<group>"; };
+		46F41990207D01ED00E4657E /* NumberFormatter+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NumberFormatter+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +123,7 @@
 			children = (
 				16D66FDA207B9FBC0095FE64 /* MarchCodingChallengeTests.swift */,
 				16FB7787206C002000B3DCD2 /* NashvilleZaTests.swift */,
+				46F4198E207D01C100E4657E /* NumberFormatterTests.swift */,
 				16FB7789206C002000B3DCD2 /* Info.plist */,
 				46F4198D207CFC5800E4657E /* Test Data */,
 			);
@@ -138,6 +143,7 @@
 			children = (
 				16FB779D206C157300B3DCD2 /* Array+Extensions.swift */,
 				16FB779F206C158E00B3DCD2 /* CLLocation+Extensions.swift */,
+				46F41990207D01ED00E4657E /* NumberFormatter+Extensions.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -264,6 +270,7 @@
 				16FB779A206C021300B3DCD2 /* LocationTableViewCell.swift in Sources */,
 				16FB77A2206C162300B3DCD2 /* LocationsDataSource.swift in Sources */,
 				16FB7773206C002000B3DCD2 /* AppDelegate.swift in Sources */,
+				46F41991207D01ED00E4657E /* NumberFormatter+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				16D66FDB207B9FBC0095FE64 /* MarchCodingChallengeTests.swift in Sources */,
+				46F4198F207D01C100E4657E /* NumberFormatterTests.swift in Sources */,
 				16FB7788206C002000B3DCD2 /* NashvilleZaTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
